@@ -122,7 +122,7 @@ echo "Provisioning phase 2 - Done"
 echo "Provisioning phase 3 - Starting: Extra packages, timezones, neofetch, firewalld, settings"
 # misc
 echo "Provisioning phase 3 - Timezone"
-timedatectl set-timezone Europe/Copenhagen --no-ask-password
+timedatectl set-timezone America/Denver --no-ask-password
 echo "Provisioning phase 3 - Extra Packages or groups"
 apt-get -y install htop atop iftop iotop firewalld nmap realmd samba nmon samba-common oddjob oddjob-mkhomedir sssd adcli libkrb5-dev libkrb5-3 libwbclient-sssd jq firefox gparted pv neofetch screen telnet ncdu tmux multitail rkhunter smartmontools zsh httpie
 # we don't need sssd

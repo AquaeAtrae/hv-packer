@@ -7,7 +7,7 @@ $startDTM = (Get-Date)
 $template_file="./templates/hv_ubuntu2204_g2.pkr.hcl"
 $var_file="./variables/variables_ubuntu2204.pkvars.hcl"
 $machine="Ubuntu 22.04"
-$packer_log=0
+$packer_log=1
 
 if ((Test-Path -Path "$template_file") -and (Test-Path -Path "$var_file")) {
   Write-Output "Template and var file found"

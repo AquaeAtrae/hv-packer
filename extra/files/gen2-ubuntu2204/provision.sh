@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # ubuntu version of provision.sh
 INSTALL_UPDATES=true
-INSTALL_PUPPET=true
+INSTALL_PUPPET=false
 INSTALL_HYPERV=false
 INSTALL_COCKPIT=true
-INSTALL_ZABBIX=false
+INSTALL_ZABBIX=true
 STAMP_FILE="/etc/packerinfo"
 
 usage() { echo "Usage: $0 [-u <true|false> INSTALL_UPDATES ] [-p <true|false> INSTALL_PUPPET] [-w <true|false> INSTALL_COCKPIT] [-h <true|false> INSTALL_HYPERV]  [-z <true|false> INSTALL_ZABBIX]" 1>&2; }
@@ -127,7 +127,7 @@ echo "Provisioning phase 2 - Done"
 echo "Provisioning phase 3 - Starting: Extra packages, timezones, neofetch, firewalld, settings"
 # misc
 echo "Provisioning phase 3 - Timezone"
-timedatectl set-timezone Europe/Copenhagen --no-ask-password
+timedatectl set-timezone America/Denver --no-ask-password
 echo "Provisioning phase 3 - Extra Packages or groups"
 export DEBIAN_FRONTEND=noninteractive
 apt-get -y update

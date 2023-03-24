@@ -35,7 +35,7 @@ autoinstall:
 #    - linux-cloud-tools-virtual
     - net-tools
   locale: en_US.UTF-8
-  timezone: Europe/Copenhagen
+  timezone: America/Denver
   ssh:
     install-server: true
     allow-pw: true

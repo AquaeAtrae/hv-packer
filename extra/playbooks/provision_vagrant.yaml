@@ -4,7 +4,7 @@
     vagrant_username: vagrant
     vagrant_password: vagrant
     vagrant_home: /home/vagrant
-    vagrant_ssh_pub: https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub
+    vagrant_ssh_pub: https://raw.githubusercontent.com/hashicorp/vagrant/master/keys/vagrant.pub
     delay_time: 5
     retries_count: 2
     reboot_server: false

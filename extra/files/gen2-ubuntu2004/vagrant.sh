@@ -5,7 +5,7 @@ echo "Executing scripts/vagrant.sh"
 useradd --badnames -m -U -p "$(echo "vagrant" | openssl passwd -1 -stdin)" -s /bin/bash vagrant
 echo "Executing scripts/vagrant.sh - adding password"
 mkdir -p 700 /home/vagrant/.ssh
-curl -sL https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub -o /home/vagrant/.ssh/authorized_keys
+curl -sL https://raw.githubusercontent.com/hashicorp/vagrant/master/keys/vagrant.pub -o /home/vagrant/.ssh/authorized_keys
 chmod -v 0600 /home/vagrant/.ssh/authorized_keys
 chown -v -R vagrant:vagrant /home/vagrant/.ssh
 cat > /etc/sudoers.d/vagrant << EOF_sudoers_vagrant
